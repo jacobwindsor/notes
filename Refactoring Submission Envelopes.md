@@ -67,6 +67,7 @@ See [orginal spec](https://docs.google.com/document/u/1/d/13NJdMDq6E8FDyrPebBDD4
 > Coordinate and group related metadata under a single entity, called a “Submission Envelope”
 
 > Provide a mechanism for users to link Metadata Documents to each other, reflecting the fact that these **metadata may be generated separately over time**
+
 *Ingest fails to do the part in bold at the moment*
 
 > Accommodate several scenarios of data submission; including 
@@ -74,17 +75,19 @@ See [orginal spec](https://docs.google.com/document/u/1/d/13NJdMDq6E8FDyrPebBDD4
 >> 2. A user wants to submit only Data Files, and link these files to existing Metadata Documents
 >> 3. A user wants to submit metadata that refers to bulk data that has not yet been submitted, then submit the relevant bulk data second 
 >> 4. A user wants to upload bulk data first, followed by metadata that refers to these bulk data
+
 *Ingest fails to do (2), (3), (4)
 
 
 > Allow for the referencing of existing Metadata Documents, both in the same Submission Envelope or in different envelopes, by accession ID, rather than redundant re-uploading of Metadata Documents.
+
 *Ingest partly fails to do this since referencing can only be done in the same project due to graph validation and exporting*
 
 **We don't export a project, we export a submission and retrieve the project information for that submission**. There's a huge difference between what we see in ingest (submissions) and what ends up in HCA (projects).
 
 
 ## Looking forward
-SubmissionEnvelopes have now become much more than they were originally intended to be. Essentialy they now ***encapsulate the current state of a whole project***
+SubmissionEnvelopes have now become much more than they were originally intended to be. Essentialy, they now ***encapsulate the current state of a whole project***
 
 ### What do we need to do?
 - Create projects and attach data/metadata to them
@@ -92,6 +95,15 @@ SubmissionEnvelopes have now become much more than they were originally intended
 - Export a project (not a submission)
 - See the current state of a project (not a submission)
 - (stretch) attach data/metadata to any project to allow reuse
+
+### Change mental model from hierachy to tagging
+- The current state may have been a result of an OOP/inheritance model (data/metadata are children of submission envelopes) but I think it would be better to think of biomaterials etc. being "tagged" with a submission envelope
+- No hierachy, flat structure
+	- This is actually how it is in core but the mental model of submission envelopes is not like this
+	- data/metadata are created and just tagged with a submission
+	- **Important** submissions are *not* tagged with (or part of) a project. Submissions are never part of a project
+		- This is because they don't need to be. If we want to allow cross-project entity re-use they cannot be
+	- data/metata is tagged as being part of a project later on
 
 ### Do we need submission envelopes at all?
 - The original intention is valid - to store provenence information about the upload of a set of metadata & data
@@ -102,15 +114,6 @@ SubmissionEnvelopes have now become much more than they were originally intended
 - If we used submission envelopes as intented (to be subsets of data/metadata), it is difficult to gather the current data/metadata for a project
 	- Have to crawl through all of the submission envelopes and get the most recent of each data/metadata entity
 	- Without submission envelopes, data/metadata can be attached to a project without this but you would lose the project->data/metadata connection for outdated data/metadata. However, the data/metadata->project link could be kept
-
-### Change mental model from hierachy to tagging
-- The current state may have been a result of an OOP/inheritance model (data/metadata are children of submission envelopes) but I think it would be better to think of biomaterials etc. being "tagged" with a submission envelope
-- No hierachy, flat structure
-	- This is actually how it is in core but the mental model of submission envelopes is not like this
-	- data/metadata are created and just tagged with a submission
-	- **Important** submissions are *not* tagged with (or part of) a project. Submissions are never part of a project
-		- This is because they don't need to be. If we want to allow cross-project entity re-use they cannot be
-	- data/metata is tagged as being part of a project later on
 
 
 
