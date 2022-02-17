@@ -7,11 +7,8 @@
         "id": "2ab6e29b1c448357",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Refactoring Submission Envelopes.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Refactoring Submission Envelopes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +84,9 @@
   },
   "active": "2ab6e29b1c448357",
   "lastOpenFiles": [
+    "Ideas/Ideas.md",
+    "Ideas/Old YouTube.md",
     "Refactoring Submission Envelopes.md",
-    "Business Ideas/Specific Search Engine.md",
-    "Business Ideas/Old YouTube.md",
-    "Business Ideas/Business Ideas.md"
+    "Ideas/Specific Search Engine.md"
   ]
 }

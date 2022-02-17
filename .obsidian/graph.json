@@ -8,10 +8,17 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "Business Ideas",
+      "query": "path:HCA",
       "color": {
         "a": 1,
-        "rgb": 5431382
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:Ideas",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
       }
     }
   ],
@@ -19,7 +26,7 @@
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "lineSizeMultiplier": 1.06348314606742,
   "collapse-forces": true,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
