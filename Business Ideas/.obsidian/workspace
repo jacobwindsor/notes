@@ -1,32 +1,29 @@
 {
   "main": {
-    "id": "3f76e4c0752bd4d9",
+    "id": "68846baa5b0cf85d",
     "type": "split",
     "children": [
       {
-        "id": "2ab6e29b1c448357",
+        "id": "afed62d4c3e6a695",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Business Ideas/Specific Search Engine.md",
-            "mode": "preview"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "efc8a6459c13a7a7",
+    "id": "23036d6363a618e5",
     "type": "split",
     "children": [
       {
-        "id": "ddd9c0450f5f72fb",
+        "id": "f808d24ae37ae5b1",
         "type": "tabs",
         "children": [
           {
-            "id": "9d06570b64200811",
+            "id": "0f1338a6b64f4d3b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,7 +31,7 @@
             }
           },
           {
-            "id": "d5e06eaa3d54887a",
+            "id": "bee3362f0548e75d",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,20 +52,19 @@
     "width": 300
   },
   "right": {
-    "id": "c13a198f20af4af3",
+    "id": "ae515ef1c77a5115",
     "type": "split",
     "children": [
       {
-        "id": "8ceb4432fc44ac58",
+        "id": "8683662af7ada9e1",
         "type": "tabs",
         "children": [
           {
-            "id": "85dca06185c48e5d",
+            "id": "4ae465e40d012d49",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Business Ideas/Specific Search Engine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,10 +82,6 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2ab6e29b1c448357",
-  "lastOpenFiles": [
-    "Business Ideas/Specific Search Engine.md",
-    "Business Ideas/Old YouTube.md",
-    "Business Ideas/Business Ideas.md"
-  ]
+  "active": "afed62d4c3e6a695",
+  "lastOpenFiles": []
 }
