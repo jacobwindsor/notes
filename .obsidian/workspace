@@ -7,8 +7,11 @@
         "id": "2ab6e29b1c448357",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Tempus.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -36,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#web",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -45,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -66,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tempus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,6 +88,7 @@
   },
   "active": "2ab6e29b1c448357",
   "lastOpenFiles": [
+    "Tempus.md",
     "Ideas/Specific Search Engine.md",
     "Ideas/Old YouTube.md",
     "Ideas/Ideas.md",
