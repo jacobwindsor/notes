@@ -36,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#web",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -45,7 +45,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -84,9 +85,9 @@
   },
   "active": "2ab6e29b1c448357",
   "lastOpenFiles": [
-    "Ideas/Ideas.md",
+    "Ideas/Specific Search Engine.md",
     "Ideas/Old YouTube.md",
-    "Refactoring Submission Envelopes.md",
-    "Ideas/Specific Search Engine.md"
+    "Ideas/Ideas.md",
+    "Refactoring Submission Envelopes.md"
   ]
 }
