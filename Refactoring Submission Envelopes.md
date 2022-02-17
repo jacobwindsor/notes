@@ -66,6 +66,8 @@ See [orginal spec](https://docs.google.com/document/u/1/d/13NJdMDq6E8FDyrPebBDD4
 
 > Coordinate and group related metadata under a single entity, called a “Submission Envelope”
 
+*Note that this is not saying how things are related. We have constrained ourselves by saying data/metadata have to be related through an experiment within a submission. This doesn't have to be true at the submission level, only at the project level. If we stop this constraint we could allow the submission of reusable metadata entities at bulk.*
+
 > Provide a mechanism for users to link Metadata Documents to each other, reflecting the fact that these **metadata may be generated separately over time**
 
 *Ingest fails to do the part in bold at the moment*
@@ -76,7 +78,7 @@ See [orginal spec](https://docs.google.com/document/u/1/d/13NJdMDq6E8FDyrPebBDD4
 >> 3. A user wants to submit metadata that refers to bulk data that has not yet been submitted, then submit the relevant bulk data second 
 >> 4. A user wants to upload bulk data first, followed by metadata that refers to these bulk data
 
-*Ingest fails to do (2), (3), (4)
+*Ingest fails to do (2), (3), (4)*
 
 
 > Allow for the referencing of existing Metadata Documents, both in the same Submission Envelope or in different envelopes, by accession ID, rather than redundant re-uploading of Metadata Documents.
