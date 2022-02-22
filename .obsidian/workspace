@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tempus.md",
-            "mode": "source"
+            "file": "Jobs/Seqera.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tempus.md",
+                "file": "Jobs/Seqera.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,11 @@
   },
   "active": "2ab6e29b1c448357",
   "lastOpenFiles": [
-    "Tempus.md",
+    "Jobs/Seqera.md",
+    "Jobs/Tempus.md",
+    "Refactoring Submission Envelopes.md",
     "Ideas/Specific Search Engine.md",
     "Ideas/Old YouTube.md",
-    "Ideas/Ideas.md",
-    "Refactoring Submission Envelopes.md"
+    "Ideas/Ideas.md"
   ]
 }

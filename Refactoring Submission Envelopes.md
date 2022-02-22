@@ -60,6 +60,23 @@ classDiagram
 	- Exemplified by post-submission updates
 		- We should not need these
 		- Should just edit the metadata and that's it
+- It's not easy to see which submission is the most up to date one
+- Original intention was to be like a "commit" but that was confusing
+
+## Questions to answer
+- Can this flow be explained (easily) to an outside scientist?
+	- Probably not
+- If a user wants to update a project (even if already in DCP), how can they easily do that?
+- Is the language we use useful? "process", "export", "submission"
+- How can we reduce the learning curve to use ingest?
+
+## Requirements
+- Export data/metadata to data portal
+- Allow linking od data/metadata between projects (re-use)
+- Bulk upload data/metadata that are not related to eachother
+- Know who uploaded data/metadata and when
+- Validate each data/metadata individually
+- Graph validate how the project looks **before** exporting 
 
 ## Original Intention
 See [orginal spec](https://docs.google.com/document/u/1/d/13NJdMDq6E8FDyrPebBDD4TEqmI8OXeNkp9ZquqoEhto/edit#heading=h.5caizsfri8tq)

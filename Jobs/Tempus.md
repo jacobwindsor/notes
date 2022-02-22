@@ -7,3 +7,5 @@
 - Strong desire to learn about AI while still utilising the skills that I have developed over my career
 - little **react native** experience but know react and it's not too far off
 - Have worked in biotech
+
+- https://www.tempus.com/oncology/tempus-one/
