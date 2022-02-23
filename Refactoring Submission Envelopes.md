@@ -134,5 +134,85 @@ SubmissionEnvelopes have now become much more than they were originally intended
 	- Have to crawl through all of the submission envelopes and get the most recent of each data/metadata entity
 	- Without submission envelopes, data/metadata can be attached to a project without this but you would lose the project->data/metadata connection for outdated data/metadata. However, the data/metadata->project link could be kept
 
+## Hiding submision envelopes
+
+**Aim**: hide submission envelopes from the user so that they only see the data/metadata of the project as a whole. Use submission envelopes as they were originally intended.
+
+**Secondary aim**: be able to see the current state of the project compared to the state of the project that is exported to DCP.
+
+**Stretch goal**: use submission envelopes to enable full history
+
+
+### Performing updates
+
+This is the complicated thing. If we're going to use submission envelopes at all, we should really make updates via the UI and via the spreadsheet use them.
+
+Performing updates should be exactly the same method as creating documents and should be the same for via UI or via spreadsheet
+
+#### Update/creation via spreadsheet upload
+1. User has a spreadsheet that contains changes to a project
+2. They upload the spreadsheet in the UI via the project page
+3. All metadata documents are collected (broker)
+4. SubmissionEnvelope is created
+5. Metadata documents are attached to new submission envelope
+6. SubmissionEnvelope is POSTED to `project/<uuid>`
+7. Options:
+	1.  If we don't want to preserve UUIDs:
+		1. Core creates new MetadataDocument(s) for this update and attaches it to the SubmissionEnvelope and project
+	2. If we do want to preserve UUIDs:
+		1. Core finds the updated metadata documents using other unique identifiers (e.g. name) and performs the update
+			
+#### Update via form UI
+1. User wishes to update a project via the UI
+2. They click edit on a entity in the UI
+3. Original entityt is copied and updates applied to it
+4. SubmissionEnvelope created
+5. Updated entity is attached to new submission envelope
+6. SubmissionEnvelope is POSTED to `project/<uuid>`
+7. Options:
+	1.  If we don't want to preserve UUIDs:
+		1. Core creates new MetadataDocument for this update and attaches it to the SubmissionEnvelope and project
+	2. If we do want to preserve UUIDs:
+		1. Core finds the updated metadata documents using other unique identifiers (e.g. name) and performs the update
+
+### Facilitating seeing diff of exported and non-exported
+- Give MetadataDocument an `outdated` property
+- When a MetadaDocument is updated the `outdated` property gets filled with the `content` of the previous version of itself
+- When the MetadataDocument is exported, this property is cleared
+
+
+
+### Affected components
+#### Ingest UI
+- Need redesigns of user flows for data/metadata upload, exporting, validation
+
+#### Ingest Core
+- I don't think it needs much changing since we're not removing submission envelope
+- Move all graph validation/export/import endpoints to the project level
+- Updates for performing updates
+- Endpoint to see what is currently exported/not exported
+	- Flag metadata documents themselves as exported/not-exported
+	- When a metadata document is updated, flag as not-exported
+	- Create endpoints to achieve diffing
+		- `project/<uuid>/exportedEntities`
+		- `project/<uuid>/unexportedEntitites
+
+#### State tracker
+- Do we move state tracking to the project level?
+	- Is that harder than just removing the state tracker?
+	- I think we can maybe get rid of the state tracker and use mongo directly as persistence of state
+
+#### Broker
+- Need to update the importer to import to the project level
+
+#### Exporter
+Just change to start directly from the project rather than looking up project from submission UUIDs
+
+#### Graph validator
+Just change to start directly from the project rather than looking up project from submission UUIDs
+
+#### Validator
+- Any changes?
+- Validates a metadata document so I think no
 
 
