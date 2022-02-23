@@ -9,3 +9,18 @@
 - Have worked in biotech
 
 - https://www.tempus.com/oncology/tempus-one/
+
+## Interview with Fernando
+[fernando.godino@tempus.com](fernando.godino@tempus.com)
+
+- Went well
+- Will send tech task
+	- SQL
+	- JavaScript
+- After tech task
+	- Interview with team (to see fit)
+	- Behavioural interview
+	- Architecture interview with fernando
+	- Interview with CTO
+	- Offer
+

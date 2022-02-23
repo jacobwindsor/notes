@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "Jobs/Seqera.md",
-            "mode": "preview"
+            "mode": "source",
+            "source": false
           }
         }
       }
