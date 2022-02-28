@@ -13,4 +13,19 @@ Also [this more junior role](https://www.seqera.io/careers/backend-software-engi
 - Went well
 - Said they may be able to find a job specifically for me
 
+## Notes from talks
+### Visualiztion of DAG 
+- Useful to have a visualization of the process of a pipeline along the DAG
+- For tower
+- I like these kind of UIs
+	- Think of some ideas
 
+## Nextflow schema
+- Used to generate a form for a non-dev to fill in parameters to run the pipeline through nextflow tower
+- **Have a look at the docs for this**
+- How are these forms generated?
+	- How is the validation done?
+- Very similiar to what we're doing at HCA
+
+
+**WATCH FINAL WORKSHOP**

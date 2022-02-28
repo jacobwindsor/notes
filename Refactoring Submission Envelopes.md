@@ -180,8 +180,6 @@ Performing updates should be exactly the same method as creating documents and s
 - When a MetadaDocument is updated the `outdated` property gets filled with the `content` of the previous version of itself
 - When the MetadataDocument is exported, this property is cleared
 
-
-
 ### Affected components
 #### Ingest UI
 - Need redesigns of user flows for data/metadata upload, exporting, validation

@@ -1,0 +1,6 @@
+- Arnau Sebe Padros
+	- Maybe talk to him and send him an email with Roderic CC'd
+	- See what he is doing and if he has positions
+- There is a potential collaboration between CRG and EBI for 
+	- They have a meeting next week (march 6th)
+- If I don't hear back from Roderic - write to him in 10 days or so
