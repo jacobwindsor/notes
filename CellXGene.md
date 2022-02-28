@@ -16,7 +16,7 @@ sequenceDiagram
 	Q-->>ICX:Receive UUID from queue
 	Note over ICX: Flatten HCA Project ready for submission
 	ICX->>CX: Submit
-	ICX->U: Notify user of success (via email?)
+	ICX->>U: Notify user of success (via email?)
 
 ```
 
