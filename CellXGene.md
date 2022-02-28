@@ -3,8 +3,8 @@
 sequenceDiagram
 	participant U as User
 	participant UI as UI
-	participant Q as Queue
 	participant C as Core
+	participant Q as Queue
 	participant ICX as Ingest to CellXGene
 	participant CX as CellXGene
 
@@ -13,7 +13,7 @@ sequenceDiagram
 	U->>UI: Request project submission to CellXGene
 	UI->>C: POST /project/UUID/submitCellxgene
 	C->>Q: Add UUID to queue
-	ICX-->>Q:Receive UUID from queue
+	Q-->>ICX:Receive UUID from queue
 	Note over ICX: Flatten HCA Project ready for submission
 	ICX->>CX: Submit
 
