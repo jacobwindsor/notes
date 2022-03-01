@@ -35,3 +35,20 @@ sequenceDiagram
 2.  Create a queue listener for `ingest-cellxgene` and run the script as a job that listens to that queue
 3.  Deploy it in our cluster
 4.  Create UI controls for submitting to cell x gene
+
+
+### Custom Implementation
+
+1. Get the matrix files
+2. Get the project fastqs
+3. Read barcode for line in matrix
+4. Get fastq filename for that barcode
+5. From file -> file metadata -> cell suspension -> donor
+6. From there fill in obs layer
+
+- Visum will be slightly different as no cell suspension
+- Avoid multiplexed data
+- 2 main types of matrices that we can put into cellxgene
+	- One where we already have a metadata file that maps all of the rows in the matrix to the observation rows
+	- One where we dont have this and have to figure it out from barcodes
+- 

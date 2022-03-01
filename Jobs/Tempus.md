@@ -23,4 +23,3 @@
 	- Architecture interview with fernando
 	- Interview with CTO
 	- Offer
-
